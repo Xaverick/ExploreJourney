@@ -1,3 +1,6 @@
+"use client"
+
+import React, { useState } from 'react'
 import Slider from '@/Components/Slider/Slider';
 import "./home.scss"
 import vector1 from "@/assets/vector.svg"
@@ -13,10 +16,52 @@ import Link from 'next/link'
 import Card from '@/Components/Card/Card';
 import trendy1 from '@/assets/Home/trendy1.svg'
 import trendy2 from '@/assets/Home/trendy2.svg'
-// import trendy3 from '@/assets/Home/trendy3.png'
 import trendy3 from '@/assets/Home/trendy3.svg'
+import scroll from '@/assets/Scroll.png'
+// import testimonial from '@/assets/testimonial.png'
+// import forward from '@/assets/forward.png'
+// import backward from '@/assets/backward.png'
+// import comma from '@/assets/commaVector.png'
+
+
+const testimonialData: { description: string, name: string }[] = [
+  {
+    description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur molestiae natus totam suscipit nihil earum accusamus laudantium, amet, culpa eveniet minus corrupti perspiciatis impedit eos, consectetur assumenda aliquid. Ipsam, nihil.',
+    name: 'Anubhav',
+  },
+  {
+    description: 'a formal written description or statement about the abilities, character and qualities of a person, often given by a previous employer; a formal written statement about the quality of a product, service, etc.',
+    name: 'Vaibhav',
+  },
+  {
+    description: 'n promotion and advertising, a testimonial or show consists of a persons written or spoken statement extolling the virtue of a product. The term testimonial most commonly applies to the sales-pitches attributed to ordinary citizens, whereas the word',
+    name: 'Kartikey',
+  },
+]
+
 
 export default function Home() {
+  const [testimonialIndex, setTestimonialIndex ] = useState(0);
+  const currentTestimonial = testimonialData[testimonialIndex];
+  
+  const handleBackward = (index: number) => {
+    if (index > 0) {
+      setTestimonialIndex(index - 1);
+
+    } else {
+      setTestimonialIndex(testimonialData.length - 1);
+    }
+  };
+
+  const handleForward = (index: number) => {
+    if (index < testimonialData.length - 1) {
+      setTestimonialIndex(index + 1);
+    } else {
+      setTestimonialIndex(0);
+    }
+  };
+  
+  
   return (
     <>
       <div className="home_header">
@@ -28,6 +73,7 @@ export default function Home() {
             We'll Take You There            
           </h1>
         </div>
+          <Image src={scroll} alt="scroll" className='scroll '/>
         <Slider /> 
       </div>
 
@@ -85,8 +131,8 @@ export default function Home() {
         </div>
         <div className="right">
           <h3 className="subheading">Honeymoon Specials</h3>
-          <h1 className="title">Our Romantic Tropical 
-            <br /> Destinations
+          <h1 className="showcasetitle">Our Romantic Tropical 
+            <br className='hidden lg:block' /> Destinations
           </h1>
           <p className='desc'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, expedita? Ullam suscipit maiores sit totam illo molestiae! Accusantium, at architecto fuga ut pariatur natus beatae nisi neque reiciendis consequuntur? Quis!</p>
           <Link href='/' className='btn'>
@@ -107,13 +153,35 @@ export default function Home() {
       <div className="trending_package">
         <h1 className="sub_heading">TRENDY</h1>
         <h1 className="heading">Our Trending Tour <br /> Packages</h1>
-        <div className='cards'>
+        <div className='trendycards'>
           <Card title='Honeymoon Special' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit.' days={5} image={trendy1} />
           <Card title='Honeymoon Special' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit.' days={5} image={trendy2} />
           <Card title='Honeymoon Special' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit.' days={5} image={trendy3} />
 
         </div>
       </div>
+
+      {/* <div className='testimonials'>
+        <div className="testimonialContent">
+          <h3 className='sub_heading'>PROMOTION</h3>
+          <h1 className='heading'>See What Clients Say <br />About Us</h1>
+          <div className="cards">
+            <button onClick={() => handleBackward(testimonialIndex - 1)} className='back'> 
+              <Image src={backward} alt="left arrow" />
+            </button>
+            {currentTestimonial && <div className="testimonial_card">
+                <Image src={comma} alt="comma" />
+                <p className="desc">{currentTestimonial.description} <span className=''>"</span></p>
+                <h3 className="title">{ currentTestimonial.name}</h3>
+            </div>
+
+            }
+            <button onClick={() => handleForward(testimonialIndex + 1)} className='next'> 
+              <Image src={forward} alt="right arrow" />
+            </button>
+          </div>
+        </div>
+      </div> */}
 
     </>
   );

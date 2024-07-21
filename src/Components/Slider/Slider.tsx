@@ -37,13 +37,11 @@ export default function App() {
             "--swiper-pagination-color": "#DF6951",
             "--swiper-pagination-bullet-inactive-color": "#999999",
             "--swiper-pagination-bullet-inactive-opacity": "1",
-            // "--swiper-pagination-bullet-size": "5px",
             "--swiper-pagination-bottom": "30px",
             "--swiper-pagination-bullet-width": "20px",
             "--swiper-pagination-bullet-height": "5px",
             "--swiper-pagination-bullet-border-radius": "5px",
-
-        }}
+        } as React.CSSProperties}
       >
         <SwiperSlide><Image src={image5} alt="image5" className='image'/></SwiperSlide>
         <SwiperSlide><Image src={image2} alt="image2" className='image'/></SwiperSlide>

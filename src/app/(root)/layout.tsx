@@ -9,7 +9,7 @@ export default function AppLayout({
     children: React.ReactNode
   }) {
     return (
-      <main className="w-full h-full">
+      <main className="app w-full h-full">
         <Navbar />
         <section className="">
             {children}  

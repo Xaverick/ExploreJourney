@@ -1,0 +1,100 @@
+.app__footer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    padding: 2rem;
+    padding-top: 4rem;
+    // background-color: #f8f8f8;
+    background-image: url("../../assets/footerBackground.png");
+    background-repeat: repeat;
+    background-size: contain;
+    background-position: center;
+
+    .upper__footer{
+        width: 85%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+  
+        .footer__section{
+            display: flex;
+            flex-direction: column;
+            // align-items: center;
+            flex: 1;
+            margin-bottom: 1rem;
+            min-width: 200px;
+            img{
+                width: 90%;
+                height: auto;
+            }
+            .desc{
+                font-size: 1rem;
+                font-weight: 300;
+                margin-top: 1rem;
+
+            }
+            .heading{
+                font-size: 1.5rem;
+                font-weight: 700;
+
+                ul{
+                    display: flex;
+                    flex-direction: column;
+
+                    
+                    li{
+                        color: white;
+                        list-style: none;
+                        margin-top: 1rem;
+                    }
+                }
+            
+            }
+
+            .socials{
+                display: flex;
+                gap: 1rem;
+            }
+        }
+
+
+        @media screen and (max-width: 800px){
+            width: 100%;
+            flex-wrap: wrap;
+            display: flex;
+
+            .footer__section{
+                align-items: center;
+                width: 100%;
+                justify-content: center;
+                text-align: center;
+            }
+        }
+
+    }
+    
+
+    .line{
+        width: 90%;
+        height: 1px;
+        border-bottom: 1px solid #DF6951;
+        margin: 0 auto;
+        margin-top: 2rem;
+    }
+
+    .lower__footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 2rem 0;
+        padding-bottom: 0;
+
+    }
+
+    
+}

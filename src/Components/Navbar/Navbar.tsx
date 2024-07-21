@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './Navbar.scss'
 import Link from 'next/link'
 import { AiOutlineMenu} from 'react-icons/ai'
@@ -8,6 +8,7 @@ import { HiX } from 'react-icons/hi'
 import {BiChevronDown,BiChevronUp} from 'react-icons/bi'
 import  {motion,AnimatePresence} from "framer-motion"
 import Image from 'next/image'
+
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false)
@@ -21,8 +22,14 @@ const Navbar = () => {
       setScroll(false)
     }
   }
-
-  window.addEventListener('scroll', changeBackground)
+  
+  useEffect(() => {
+    window.addEventListener('scroll', changeBackground)
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener('scroll', changeBackground)
+    }
+  }, [])
 
   return (
     <nav className={`app__flex start ${scroll ? 'changeback' : "" }`}>
@@ -35,7 +42,7 @@ const Navbar = () => {
           <li><Link href="/">Home</Link></li>
           <li><Link href="/about">About Us</Link></li>
           <li>
-              <a className='relative-position nohover'>Services <BiChevronDown /></a>
+              <a className='relative-position nohover'>Destinations <BiChevronDown /></a>
               <ul className='hover-dropdown'>
                 <li><Link href="/services/coffewithmk">Koffee With MK</Link></li>
                 <li><Link href="/services/launchpad">Launchpad</Link></li>
@@ -71,7 +78,7 @@ const Navbar = () => {
                 <li><Link href='/about' onClick={() => setToggle(false)}> About Us </Link></li> 
                 <li>
                   <span>
-                    <a>Services</a>
+                    <a>Destinations</a>
                     {serviceToggle ? <BiChevronUp onClick={() => setServiceToggle(false)} /> : <BiChevronDown onClick={() => setServiceToggle(true)} />}
                     <AnimatePresence>
                     {serviceToggle && (
@@ -103,6 +110,7 @@ const Navbar = () => {
                   </span>         
 
                 </li>
+                <li><Link href='/home' onClick={() => setToggle(false)}> Contact Us </Link></li>
 
             </ul>
             </motion.div>
