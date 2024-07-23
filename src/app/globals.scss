@@ -9,6 +9,9 @@
   --primary_color: #DF6951;
 }
 
+html, body {
+  overflow-x: hidden! important;
+}
 
 .app {
   // background-color: #F8F8F8 ;
@@ -47,7 +50,7 @@ a{
 
 @media screen and (max-width: 767px){
   html,body{
-    overflow-x: hidden! important;
+    
     
   } 	
 }

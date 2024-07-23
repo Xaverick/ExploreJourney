@@ -1,0 +1,240 @@
+
+.about_banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    background: url("../../../assets/About/Banner.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    filter: brightness(80%);
+    width: 100%;
+    .title{
+        color: white;   
+        z-index: 2;
+        font-size: 5rem;
+        font-family: 'Permanent Marker', cursive;
+        font-weight: 700;
+        line-height: 1.1;
+
+        @media screen and (max-width: 700px){
+            font-size: 4rem;
+        }
+    }
+}
+
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    margin: 2rem auto;
+    padding: 1rem;
+    .left__info{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        .info_sub_heading{
+            color: var(--primary_color);
+            font-size: 1.3rem;
+            font-weight: 700;
+        }
+        .info_heading{
+            font-size: 2.9rem;
+            font-weight: 600;
+            line-height: normal;
+        }
+        .info_desc{
+            margin-top: 1rem;
+            font-size: 1.2rem;
+            font-weight: 300;
+
+        }   
+        .info__btn{
+            margin-top: 2rem;
+            background: var(--primary_color);
+            color: white;
+            padding: 0.7rem 2rem;
+            border-radius: 5px;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            &:hover{
+                background: #a14c3d;
+            }
+        }
+
+    }
+
+    .right_info{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+
+        .image1{
+            width: 100%;
+            height: 100%;
+        }
+
+        .image2{
+            position: absolute;
+            top: 0;
+            // right: 50%;
+            // // left: 50%;
+            width: 80%;
+            // height: 100%;
+        }
+
+        .image3{
+            position: absolute;
+            top: 7%;
+            width: 70%;
+            height: 100%;
+        }
+
+    }
+
+    @media screen and (max-width: 800px){
+        flex-direction: column;
+        gap:2rem;
+        .left__info{
+            width: 100%;
+            .info_heading{
+                font-size: 2.5rem;
+            }
+            .info_desc{
+                font-size: 1.2rem;
+            }
+            .info__btn{
+                margin-top: 1rem;
+            }
+        }
+
+        .right_info{
+            width: 100%;
+        }
+    }
+}
+
+.video_demo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+    margin-top: 4rem;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+
+    @media screen and (max-width: 800px){
+        height: 250px;
+    }
+}
+
+
+.popularTours{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: 2rem auto;
+    padding: 1rem;
+    gap: 2rem;
+    position: relative;
+    .popular_right{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        .popular_sub_heading{
+            color: var(--primary_color);
+            font-size: 1.3rem;
+            font-weight: 700;
+        }
+        .popular_heading{
+            font-size: 2.9rem;
+            font-weight: 600;
+            line-height: normal;
+        }
+        .popular_desc{
+            margin-top: 1rem
+        }
+
+        .stats{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+
+            .statcontainer{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            
+        }
+
+    }
+
+    .shell{
+        position: absolute;
+        top: 0;
+        right: -6%;
+        width: 300px;
+    }
+
+    .popular_left{
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        .image{
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    @media screen and (max-width: 800px){
+        flex-direction: column;
+        gap:2rem;
+        .popular_right{
+            width: 100%;
+            .popular_heading{
+                font-size: 2.5rem;
+            }
+            .popular_desc{
+                font-size: 1.2rem;
+            }
+            .stats{
+                flex-wrap: wrap;
+                gap: 2rem;
+            }
+        }
+
+        .shell{
+            display: none;
+        }
+
+        .popular_left{
+            width: 100%;
+            .image{
+                width: 100%;
+            }
+        }
+    }
+
+}
