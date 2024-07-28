@@ -4,8 +4,8 @@ import Image, { StaticImageData } from "next/image";
 import { FaCalendarAlt } from "react-icons/fa";
 import Link from "next/link";
 import { packages, popularPackages } from "@/Constants";
-import phone from "@/assets/packages/phone.png";
-import shell from "@/assets/packages/shell.png";
+import phone from "@/assets/Packages/phone.png";
+import shell from "@/assets/Packages/shell.png";
 
 type CardProps = {
   title: string;
