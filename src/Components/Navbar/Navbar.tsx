@@ -42,7 +42,7 @@ const Navbar = () => {
           <li><Link href="/">Home</Link></li>
           <li><Link href="/about">About Us</Link></li>
           <li>
-              <a className='relative-position nohover'>Destinations <BiChevronDown /></a>
+              <Link href="/packages" className='relative-position nohover'>Destinations <BiChevronDown /></Link>
               <ul className='hover-dropdown'>
                 <li><Link href="/services/coffewithmk">Koffee With MK</Link></li>
                 <li><Link href="/services/launchpad">Launchpad</Link></li>
@@ -74,11 +74,11 @@ const Navbar = () => {
             <ul>
                 <HiX className='navbar-icon' onClick={() => setToggle(false)} />
                 
-                <li><Link href='/home' onClick={() => setToggle(false)}> Home </Link></li>
+                <li><Link href='/' onClick={() => setToggle(false)}> Home </Link></li>
                 <li><Link href='/about' onClick={() => setToggle(false)}> About Us </Link></li> 
                 <li>
                   <span>
-                    <a>Destinations</a>
+                    <Link href="/packages" onClick={() => setToggle(false)}>Destinations</Link>
                     {serviceToggle ? <BiChevronUp onClick={() => setServiceToggle(false)} /> : <BiChevronDown onClick={() => setServiceToggle(true)} />}
                     <AnimatePresence>
                     {serviceToggle && (

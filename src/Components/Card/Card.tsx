@@ -18,7 +18,7 @@ const Card = ({title, description, image, days}: CardProps) => {
         <div className="icon">
             <Image src={image} alt="vector" width={20} height={20}/>
         </div>
-        <p className='flex '> <FaCalendarAlt /> &nbsp; {days} Days</p>
+        <div className='info'> <FaCalendarAlt /> &nbsp; {days} Days</div>
         <div className="text">
             <h3 className="title">{title}</h3>
             {/* <p className='flex'> <FaCalendarAlt /> &nbsp; {days} Days</p> */}
