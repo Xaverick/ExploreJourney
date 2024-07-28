@@ -1,9 +1,9 @@
-import img1 from '@/assets/packages/img1.png';
-import img2 from '@/assets/packages/img2.png';
-import img3 from '@/assets/packages/img3.png';
-import img4 from '@/assets/packages/img4.png';
-import img5 from '@/assets/packages/img5.png';
-import img6 from '@/assets/packages/img6.png';
+import img1 from '@/assets/Packages/img1.png';
+import img2 from '@/assets/Packages/img2.png';
+import img3 from '@/assets/Packages/img3.png';
+import img4 from '@/assets/Packages/img4.png';
+import img5 from '@/assets/Packages/img5.png';
+import img6 from '@/assets/Packages/img6.png';
 
 
 const packages = [
