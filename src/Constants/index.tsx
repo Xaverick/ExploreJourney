@@ -75,4 +75,66 @@ const popularPackages = [
 
 
 
-export { packages, popularPackages }
+const kashmir = {
+    title: "Kashmir",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatem.",
+
+    details: [
+        {
+            key: 'Destination', 
+            value: "Kashmir"
+        },
+        {
+            key: 'Departure', 
+            value: "New Delhi"
+        },
+        {
+            key: 'Departure Time', 
+            value: "10:00 AM"
+        },
+        {
+            key: 'Return Time', 
+            value: "10:00 PM"
+        },
+
+    ],
+    included: ["lunch", "breakfast", "dinner"],
+
+    notIncluded: ["airport pick-up", "airport drop"],
+    
+    gallery : [
+        img1, img2, img3, img4, img5, img6
+    ],
+
+
+    tourPlan: {
+        day1: {
+            title: "Day 1: Departure",
+            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatem.",
+            points: ['dont,', 'breakfast', 'lunch', 'dinner']
+        },
+        day2: {
+            title: "Day 2: Visiting Zurich, Geneva and Zermatt",
+            description: "Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet.",
+            points: ['dont,', 'breakfast', 'lunch', 'dinner']
+        },
+        day3: {
+            title: "Day 3: Rest",
+            description: "Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet.",
+            points: ['dont,', 'breakfast', 'lunch', 'dinner']
+        },
+        day4: {
+            title: "Day 4: Historical Tour",
+            description: "Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet.",
+            points: ['dont,', 'breakfast', 'lunch', 'dinner']
+        },
+        day5: {
+            title: "Day 5: Return",
+            description: "Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.",
+        },
+    }
+}
+
+
+
+export { packages, popularPackages, kashmir }
