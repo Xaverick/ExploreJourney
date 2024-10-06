@@ -71,7 +71,7 @@ const page = ({ params }: { params: { destination: string } }) => {
             </h1>
           </div>
 
-          <div className="maincontent">
+          <div className="destination_maincontent">
             <div className="left">
               {selectedInfo === "info" && (
                 <>

@@ -15,15 +15,15 @@ type CardProps = {
 const Card = ({title, description, image, days}: CardProps) => {
   return (
     <div className="trendycard">
-        <div className="icon">
+        <div className="trendyicon">
             <Image src={image} alt="vector" width={20} height={20}/>
         </div>
-        <div className='info'> <FaCalendarAlt /> &nbsp; {days} Days</div>
-        <div className="text">
-            <h3 className="title">{title}</h3>
+        <div className='trendyinfo'> <FaCalendarAlt /> &nbsp; {days} Days</div>
+        <div className="trendytext">
+            <h3 className="trendytitle">{title}</h3>
             {/* <p className='flex'> <FaCalendarAlt /> &nbsp; {days} Days</p> */}
-            <p className="desc">{description}</p>
-            <button className='btncards'>Explore Now</button>
+            <p className="trendydesc">{description}</p>
+            <button className='trendybtncards'>Explore Now</button>
         </div>
     </div>
   )

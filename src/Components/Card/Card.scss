@@ -16,7 +16,7 @@
         transform: translateY(-10px);
         box-shadow: 0 0 20px rgba(0,0,0,0.2);
     }
-    .icon{
+    .trendyicon{
         height: 300px;
         width: 100%;
         img{
@@ -26,30 +26,30 @@
             border-radius: 10px;
         }
     }
-    .info{
+    .trendyinfo{
         width: 100%;
         display: flex;
         font-weight: 400;
         text-align: start;
-        color: #7D7D7D;
+        // color: #7D7D7D;
     }
-    .text{
+    .trendytext{
         display: flex;
         flex-direction: column;
         // align-items: center;
         // justify-content: center;
         gap: 1rem;
-        .title{
+        .trendytitle{
             font-size: 1.2rem;
             font-weight: 600;
         }
-        .desc{
+        .trendydesc{
             font-size: 1rem;
             font-weight: 300;
         }
     }
 
-    .btncards{
+    .trendybtncards{
         padding: 0.8rem 2rem;
         background-color: var(--primary_color);
         color: white;

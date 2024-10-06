@@ -17,7 +17,7 @@ const Hotels = () => {
             <h1 className='title'>Hotels</h1>
         </div>
 
-        <div className="content">
+        <div className="hotel_content">
             <h1 className="heading">Hotels</h1>
             <p className="para">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis aliquam excepturi doloremque maiores, consequatur unde, adipisci fugiat officiis explicabo voluptate suscipit id aut ipsam laborum sunt corrupti. Excepturi, distinctio quam!
@@ -25,23 +25,23 @@ const Hotels = () => {
                 Accusantium maiores pariatur ad odio! Illo dolorum ipsum ut voluptate esse, fugit eligendi distinctio, corporis fugiat, minima quaerat expedita adipisci? Pariatur doloribus nisi ipsum architecto rem quidem! Veniam, nemo eum.
             </p>
 
-            <div className="cards">
-                <div className="card">
+            <div className="hotel_cards">
+                <div className="hotel_card">
                     <Image src={asset1} alt="image1" />
                     <h1 className="card_heading">The Oberoi Hotels</h1>
                     <Link href="/hotels/Theoberoihotels?hotel=The Oberoi Hotels" className="link">Read More</Link>
                 </div>
-                <div className="card">
+                <div className="hotel_card">
                     <Image src={asset2} alt="image1" />
                     <h1 className="card_heading">Taj Hotels</h1>
                     <Link href="/hotels/Tajhotels?hotel=Taj Hotels" className="link">Read More</Link>
                 </div>
-                <div className="card">
+                <div className="hotel_card">
                     <Image src={asset3} alt="image1" />
                     <h1 className="card_heading">ITC Hotels</h1>
                     <Link href="/hotels/ITChotels?hotel=ITC Hotels" className="link">Read More</Link>
                 </div>
-                <div className="card">
+                <div className="hotel_card">
                     <Image src={asset4} alt="image1" />
                     <h1 className="card_heading">Leela Hotels</h1>
                     <Link href="/hotels/Leelahotels?hotel=Leela Hotels" className="link">Read More</Link>

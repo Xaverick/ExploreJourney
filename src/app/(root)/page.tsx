@@ -157,7 +157,6 @@ export default function Home() {
           <Card title='Honeymoon Special' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit.' days={5} image={trendy1} />
           <Card title='Honeymoon Special' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit.' days={5} image={trendy2} />
           <Card title='Honeymoon Special' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit.' days={5} image={trendy3} />
-
         </div>
       </div>
 

@@ -55,9 +55,9 @@ const Navbar = () => {
           </li>
           <li><Link href="" className='relative-position nohover'>Services <BiChevronDown /></Link>
               <ul className='hover-dropdown'>
-                <li><Link href="/services/coffewithmk">Contact Us</Link></li>
-                <li><Link href="/services/launchpad">Transports</Link></li>
-                <li><Link href="/services/emerge">Trains And Flight</Link></li>               
+                <li><Link href="/contact">Contact Us</Link></li>
+                <li><Link href="/transport">Transports</Link></li>
+                <li><Link href="">Trains And Flight</Link></li>               
               </ul>
           </li>
           <li><Link href="/hotels">Hotels</Link></li>
