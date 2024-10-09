@@ -11,8 +11,8 @@ import shell from "@/assets/Packages/shell.png";
 import { IoIosInformationCircleOutline } from "react-icons/io";
 import { RiCalendarScheduleLine } from "react-icons/ri";
 import { GrGallery } from "react-icons/gr";
-
-// type CardProps = {
+import Plan from "./plan.tsx"
+// type }CardProps = {
 //   title: string;
 //   description: string;
 //   image: StaticImageData;
@@ -61,14 +61,14 @@ const page = ({ params }: { params: { destination: string } }) => {
             >
               <RiCalendarScheduleLine /> &nbsp; Tour Plan
             </h1>
-            <h1
+            {/* <h1
               className={
                 `heading ` + (selectedInfo === "gallery" ? "active" : "")
               }
               onClick={() => setSelectedInfo("gallery")}
             >
               <GrGallery /> &nbsp; Gallery
-            </h1>
+            </h1> */}
           </div>
 
           <div className="destination_maincontent">
@@ -124,12 +124,10 @@ const page = ({ params }: { params: { destination: string } }) => {
                 </>
               )}
 
-              {/* {selectedInfo === "plan" && (
-                <div className="plan">
-                  <h1 className="heading">Tour Plan</h1>
-                </div>
+              {selectedInfo === "plan" && (
+                  <Plan data={destination.tourPlan} />
               )}
-
+{/* 
               {selectedInfo === "gallery" && (
                 <div className="gallery">
                   <h1 className="heading">Gallery</h1>
@@ -157,7 +155,7 @@ const page = ({ params }: { params: { destination: string } }) => {
               </div>
             </div>
           </div>
-          <Image src={phone} alt="" className="phoneImg" />
+          {/* <Image src={phone} alt="" className="phoneImg" /> */}
         </div>
       </div>
     </>
