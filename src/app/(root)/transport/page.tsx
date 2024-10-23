@@ -6,8 +6,19 @@ import third from "../../../assets/transport/3.jpg"
 import fourth from "../../../assets/transport/4.jpg"
 import fifth from "../../../assets/transport/5.jpg"
 import Image, { StaticImageData } from "next/image";
+interface Transport {
+    image: StaticImageData;
+    category: string;
+    subheading: string;
+    heading: string;
+    length: string;
+    width: string;
+    height: string;
+    desc: string;
+}
+
 const page = () => {
-    const transports: {}[] = [
+    const transports: Transport[] = [
       {
         image: first,
         category: "2-3 Passengers",

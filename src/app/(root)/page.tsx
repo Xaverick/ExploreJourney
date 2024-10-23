@@ -22,6 +22,7 @@ import scroll from '@/assets/Scroll.png'
 // import forward from '@/assets/forward.png'
 // import backward from '@/assets/backward.png'
 // import comma from '@/assets/commaVector.png'
+import {packages} from '@/Constants'
 
 
 const testimonialData: { description: string, name: string }[] = [
@@ -88,7 +89,7 @@ export default function Home() {
               </div>
               <div className="text">
                 <h3 className="title">Guided Tours</h3>
-                <p className="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                <p className="desc">Expert local guides. Hidden gems discovery. Small group adventures. </p>
               </div>
             </div>
 
@@ -98,7 +99,7 @@ export default function Home() {
               </div>
               <div className="text">
                 <h3 className="title">Best Flights Options</h3>
-                <p className="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                <p className="desc">Lowest fare guarantee.Premium airlines. 24/7 flight support. </p>
               </div>
             </div>
 
@@ -108,7 +109,7 @@ export default function Home() {
               </div>
               <div className="text">
                 <h3 className="title">Religious Tour</h3>
-                <p className="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                <p className="desc">Sacred destinations. Spiritual journeys. Peaceful pilgrimages. </p>
               </div>
             </div>
 
@@ -118,7 +119,7 @@ export default function Home() {
               </div>
               <div className="text">
                 <h3 className="title">Medical Insurance</h3>
-                <p className="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                <p className="desc">Worldwide coverage. Medical protection. Emergency assistance. </p>
               </div>
             </div>
           </div>  
@@ -134,9 +135,10 @@ export default function Home() {
           <h1 className="showcasetitle">Our Romantic Tropical 
             <br className='hidden lg:block' /> Destinations
           </h1>
-          <p className='desc'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, expedita? Ullam suscipit maiores sit totam illo molestiae! Accusantium, at architecto fuga ut pariatur natus beatae nisi neque reiciendis consequuntur? Quis!</p>
-          <Link href='/' className='btn'>
-            View Pacakges
+          <p className='desc'>Discover the world's most romantic destinations, hand-picked for newlyweds. Experience luxury stays, intimate experiences, and breathtaking views. Let us transform your honeymoon dreams into cherished memories with our exclusive couples' packages."
+          Would you like me to adjust the length or focus of this content? I can also suggest specific destination highlights or package features if you'd like to showcase those instead.</p>
+          <Link href='/packages/kashmir' className='btn'>
+            View Pacakages
           </Link>
         </div>
       </div>
@@ -154,9 +156,9 @@ export default function Home() {
         <h1 className="sub_heading">TRENDY</h1>
         <h1 className="heading">Our Trending Tour <br /> Packages</h1>
         <div className='trendycards'>
-          <Card title='Honeymoon Special' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit.' days={5} image={trendy1} />
-          <Card title='Honeymoon Special' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit.' days={5} image={trendy2} />
-          <Card title='Honeymoon Special' description='Lorem ipsum dolor sit amet, consectetur adipiscing elit.' days={5} image={trendy3} />
+          <Card title={packages[0].title} description={packages[0].description} days={packages[0].days} image={trendy1} />
+          <Card title={packages[1].title} description={packages[1].description} days={packages[1].days} image={trendy2} />
+          <Card title={packages[2].title} description={packages[2].description} days={packages[2].days} image={trendy3} />
         </div>
       </div>
 

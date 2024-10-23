@@ -11,7 +11,8 @@ import shell from "@/assets/Packages/shell.png";
 import { IoIosInformationCircleOutline } from "react-icons/io";
 import { RiCalendarScheduleLine } from "react-icons/ri";
 import { GrGallery } from "react-icons/gr";
-import Plan from "./plan.tsx"
+import Plan from "./plan";
+
 // type }CardProps = {
 //   title: string;
 //   description: string;

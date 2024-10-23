@@ -19,8 +19,8 @@ export const metadata: Metadata = {
   icons: {
     icon: "/assets/favicon.ico",
   },
-  title: "Anubhav Bharat",
-  description: "At Anubhav Bharat, we are passionate about crafting unforgettable travel experiences. As a premier traveling and tour company, we specialize in showcasing the rich heritage, diverse cultures, and breathtaking landscapes of India. Our mission is to provide travelers with authentic, immersive journeys that create lasting memories.",
+  title: "Explore Journey",
+  description: "At Explore Journey, we are passionate about crafting unforgettable travel experiences. As a premier traveling and tour company, we specialize in showcasing the rich heritage, diverse cultures, and breathtaking landscapes of India. Our mission is to provide travelers with authentic, immersive journeys that create lasting memories.",
 };
 
 export default function RootLayout({

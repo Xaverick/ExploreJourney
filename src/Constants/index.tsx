@@ -8,22 +8,22 @@ import img6 from '@/assets/Packages/img6.png';
 
 const packages = [
     {
-        title: "Switzerland",
+        title: "Golden Triangle Tour",
         img: img1,
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatem.",
-        days: 5,
+        description: "The Golden Triangle Tour in India covers Delhi, Agra, and Jaipur, showcasing iconic landmarks like the Taj Mahal, Jaipur’s palaces, and Delhi’s historic sites",
+        days: '4 Nights and 5 Days',
     },
     {
-        title: "Maldives",
+        title: "Rajasthan Tour",
         img: img2,
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatem.",
-        days: 5,
+        description: "The Rajasthan Tour explores majestic forts, palaces, and desert landscapes, highlighting cities like Jaipur, Udaipur, Jodhpur, and Jaisalmer. ",
+        days: '13 Nights & 15 Days',
     },
     {
-        title: "Berlin",
+        title: "Kerala Tour",
         img: img3,
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatem.",
-        days: 5,
+        description: "The Kerala Tour showcases serene backwaters, lush green landscapes, beaches, and hill stations. Known as \"God's Own Country\"",
+        days: '4 Nights & 5 Days',
     },
     {
         title: "Torronto",
@@ -220,6 +220,7 @@ const kashmir = {
         ]
     }
 }
+
 
 
 

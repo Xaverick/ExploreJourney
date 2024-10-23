@@ -106,7 +106,7 @@ const page = () => {
                             {currdata?.content}
                         </div>
                         <div className="right">
-                            <Image src={currdata?.image} className="image" alt="image" />
+                            <Image src={currdata?.image || ""} className="image" alt="image" />
                         </div>
                     </div>
                     

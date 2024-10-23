@@ -25,7 +25,7 @@ const page = () => {
         <div className="left__info">
           <h2 className='info_sub_heading'>PROMOTION</h2>
           <h1 className="info_heading">We Provide The Best Sightseeing Tours</h1>
-          <p className='info_desc'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa obcaecati exercitationem sunt necessitatibus tenetur non dolorum repellendus eos odio ipsam labore minima illum molestiae quod quas explicabo, nobis excepturi maiores.</p>
+          <p className='info_desc'>LAt Explore Journey, we turn travel dreams into unforgettable experiences. With years of expertise in crafting exceptional tours, we specialize in providing comprehensive travel solutions that combine comfort, adventure, and cultural immersion. From seamless flight bookings to handpicked accommodations, expert guides to personalized itineraries, our dedicated team ensures every aspect of your journey is meticulously planned.</p>
           <button className='info__btn'>View Packages</button>
         </div>
         <div className="right_info relative">
@@ -48,11 +48,11 @@ const page = () => {
         <div className="popular_right">
           <h1 className='popular_sub_heading'>TREND</h1>
           <h1 className='popular_heading'>Our Popular Tour Plans</h1>
-          <p className='popular_desc'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa obcaecati exercitationem sunt necessitatibus tenetur non dolorum repellendus eos odio ipsam labore minima illum molestiae quod quas explicabo, nobis excepturi maiores.</p>
+          <p className='popular_desc'>Discover our most sought-after tour experiences, crafted with passion and expertise. From sacred pilgrimages to cultural sightseeing and thrilling adventures. Join the 50% of travelers choosing our signature sightseeing tours across stunning destinations.</p>
           <div className="stats">
             <div className="statcontainer">
               <StatComponent percentage={27} />
-              <p className='mt-2 font-bold'>Spirutual</p>
+              <p className='mt-2 font-bold'>Spiritual</p>
             </div>
             <div className="statcontainer">
               <StatComponent percentage={50} />

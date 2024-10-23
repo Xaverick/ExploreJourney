@@ -11,13 +11,33 @@ interface FAQItem {
     open: boolean;
 }
 
-// interface PlanProps {
-//     data: FAQItem[];
-// }
+interface PlanProps {
 
-const Plan = ({data}) => {
+    data: {
+  
+      itinerary: {
+  
+        heading: string;
+  
+        content: JSX.Element;
+  
+        move: boolean;
+  
+        open: boolean;
+  
+      }[];
+  
+      inclusion: JSX.Element[];
+  
+      exclusion: JSX.Element[];
+  
+    };
+  
+  }
+
+const Plan: React.FC<PlanProps> = ({ data }) => {
     const [liveData, setLiveData] = useState(data.itinerary)
-    const togglefaq = (index) => {
+    const togglefaq = (index : number) => {
         setLiveData(liveData.map((item, i) => {
         if (i === index) {
             item.move = !item.move;
