@@ -126,8 +126,6 @@ const page = ({ params }: { params: { destination: string } }) => {
                     </div>
                   </div>
                 </div>
-
-
                 </>
               )}
 
@@ -178,3 +176,5 @@ const page = ({ params }: { params: { destination: string } }) => {
 };
 
 export default page;
+
+

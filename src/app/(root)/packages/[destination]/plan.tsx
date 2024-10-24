@@ -27,9 +27,8 @@ interface PlanProps {
   
       }[];
   
-      inclusion: JSX.Element[];
-  
-      exclusion: JSX.Element[];
+      inclusion:  string[] | JSX.Element[];  
+      exclusion: string[] | JSX.Element[];
   
     };
   

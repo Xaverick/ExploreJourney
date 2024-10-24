@@ -249,10 +249,10 @@ const detailedIteneray = [
         ],
     
         tourPlan: {
-            "itinerary": [
+            itinerary: [
                 {
-                    "heading": "Day 1 - Arrival in Delhi",
-                    "content": <>
+                    heading: "Day 1 - Arrival in Delhi",
+                    content: <>
                         <p>On Arrival in Delhi Airport (in morning), meet and greet by our representative and followed by transfer to hotel.</p>
                         
                         <p><b>DELHI:</b> one of India's fastest growing cities has spread far beyond the "seven cities" created between the 13th and the 17th centuries. It has sprawled over the west bank of the Yamuna and now straddles the river. Remnants of the past survive cheek-by-jowl with skyscrapers, residential colonies and bustling commercial complexes. Delhi has some of the finest museums in the country. Its boutiques and shopping arcades offer access to a wealth of traditional and contemporary crafts from all over the country. It has specialty restaurants to please the gourmet, open parks and gardens ablaze with flowers, and in the winter months particularly, a variety of cultural events. Its many-layered existence is tantalizing and can entice the curious traveler into a fascinating journey of discovery</p>
@@ -267,12 +267,12 @@ const detailedIteneray = [
     
                         <p>Overnight stay at hotel.</p>
                     </>,
-                    "move": false,
-                    "open": false
+                    move: false,
+                    open: false
                 },
                 {
-                    "heading": "Day 2 - Delhi – Agra (204 kms / 4 ½ hrs)",
-                    "content": <>
+                    heading: "Day 2 - Delhi – Agra (204 kms / 4 ½ hrs)",
+                    content: <>
                         <p><b>Morning after breakfast proceed to drive for Agra.</b></p>
     
                         <p><b>Agra</b>, is famous as the home to one of the Seven Wonders of the World – Taj Mahal. The architectural splendour of the mausoleums, the fort and the palaces in Agra is a vivid reminder of the opulence of the legendary Mughal Empire. Agra is known for its superb inlay work on marble and soapstone by artisans who are hereditary craft persons.</p>
@@ -287,12 +287,12 @@ const detailedIteneray = [
     
                         <p>Overnight stay at hotel.</p>
                     </>,
-                    "move": false,
-                    "open": false
+                    move: false,
+                    open: false
                 },
                 {
-                    "heading": "Day 3 - Agra – Fatehpur Sikri – Jaipur (235 kms / 4 ½ hrs)",
-                    "content": <>
+                    heading: "Day 3 - Agra – Fatehpur Sikri – Jaipur (235 kms / 4 ½ hrs)",
+                    content: <>
                         <p>Morning breakfast at hotel and proceed to leave for Jaipur, en-route visiting Fatehpur Sikri</p>
     
                         <p><b>Fatehpur Sikri</b> – an extraordinary city built by Akbar the Great in 1569 AD in red sandstone, with its forts, palaces, mosques and was abandoned 14 years after its creation due to political reasons.</p>
@@ -305,12 +305,12 @@ const detailedIteneray = [
     
                         <p>Overnight stay at hotel.</p>
                     </>,
-                    "move": false,
-                    "open": false
+                    move: false,
+                    open: false
                 },
                 {
-                    "heading": "Day 4 - Jaipur",
-                    "content": <>
+                    heading: "Day 4 - Jaipur",
+                    content: <>
                         <p>Morning after breakfast and leave for sightseeing tour of Jaipur.</p>
     
                         <p><b>Visit:</b> Amber Fort, Hawa Mahal, City Palace, Jantar Mantar Observatory etc.</p>
@@ -323,20 +323,20 @@ const detailedIteneray = [
     
                         <p>Overnight stay.</p>
                     </>,
-                    "move": false,
-                    "open": false
+                    move: false,
+                    open: false
                 },
                 {
-                    "heading": "Day 5 - Jaipur – Delhi (270 kms / 6 hrs) - Depart",
-                    "content": <>
+                    heading: "Day 5 - Jaipur – Delhi (270 kms / 6 hrs) - Depart",
+                    content: <>
                         <p>Morning after breakfast and proceed to drive to Delhi.</p>
     
                         <p>On arrival in Delhi transfer to International Airport to connect onward flight connection.</p>
     
                         <p><b>Tour End</b></p>
                     </>,
-                    "move": false,
-                    "open": false
+                    move: false,
+                    open: false
                 }
             ],
             inclusion: [
