@@ -25,7 +25,7 @@ const page = () => {
         <div className="left__info">
           <h2 className='info_sub_heading'>PROMOTION</h2>
           <h1 className="info_heading">We Provide The Best Sightseeing Tours</h1>
-          <p className='info_desc'>LAt Explore Journey, we turn travel dreams into unforgettable experiences. With years of expertise in crafting exceptional tours, we specialize in providing comprehensive travel solutions that combine comfort, adventure, and cultural immersion. From seamless flight bookings to handpicked accommodations, expert guides to personalized itineraries, our dedicated team ensures every aspect of your journey is meticulously planned.</p>
+          <p className='info_desc'>At Explore Journey, we turn travel dreams into unforgettable experiences. With years of expertise in crafting exceptional tours, we specialize in providing comprehensive travel solutions that combine comfort, adventure, and cultural immersion. From seamless flight bookings to handpicked accommodations, expert guides to personalized itineraries, our dedicated team ensures every aspect of your journey is meticulously planned.</p>
           <button className='info__btn'>View Packages</button>
         </div>
         <div className="right_info relative">

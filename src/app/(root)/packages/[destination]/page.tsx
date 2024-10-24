@@ -5,14 +5,14 @@ import "./destination.scss";
 import Image, { StaticImageData } from "next/image";
 import { FaCalendarAlt } from "react-icons/fa";
 import Link from "next/link";
-import { popularPackages, kashmir } from "@/Constants";
+import { popularPackages, detailedIteneray } from "@/Constants";
 import phone from "@/assets/Packages/phone.png";
 import shell from "@/assets/Packages/shell.png";
 import { IoIosInformationCircleOutline } from "react-icons/io";
 import { RiCalendarScheduleLine } from "react-icons/ri";
 import { GrGallery } from "react-icons/gr";
 import Plan from "./plan";
-
+import { useSearchParams } from 'next/navigation';
 // type }CardProps = {
 //   title: string;
 //   description: string;
@@ -38,13 +38,19 @@ import Plan from "./plan";
 
 const page = ({ params }: { params: { destination: string } }) => {
   const [selectedInfo, setSelectedInfo] = useState("info");
-
-  const destination = kashmir;
+  const searchParams = useSearchParams();
+  const tour = searchParams.get('tour'); 
+  console.log(tour);
+  const result = tour ? detailedIteneray.find((item) => item.title.toLowerCase() === tour.toLowerCase()) : null;
+  const destination = result;
   return (
     <>
-      <div className="destination_banner">
-        <h1 className="title">{destination.title}</h1>
-      </div>
+      {destination ? 
+      <>
+        <div className="destination_banner">
+          <h1 className="title">{destination.title}</h1>
+        </div>
+      
 
       <div className="destination_container">
         <Image src={shell} alt="" className="shellimage" />
@@ -137,10 +143,10 @@ const page = ({ params }: { params: { destination: string } }) => {
             </div>
 
             <div className="right">
-              <div className="search">
+              {/* <div className="search">
                 <input type="text" placeholder="Search..." />
                 <button className="search-click">Search</button>
-              </div>
+              </div> */}
 
               <div className="popular-post">
                 <h2 className="popular_heading">Popular Destinations</h2>
@@ -148,7 +154,7 @@ const page = ({ params }: { params: { destination: string } }) => {
                   <div className="blog__card" key={index}>
                     {item.img && <Image src={item.img} alt="" />}
                     <div className="blog__card__content">
-                      <h2>{item.title}</h2>
+                      <h2 className="hover:text-[#DF6951]"><Link href={`/packages/${item.title}`}>{item.title}</Link></h2>
                       <p>{item.description}</p>
                     </div>
                   </div>
@@ -159,6 +165,14 @@ const page = ({ params }: { params: { destination: string } }) => {
           {/* <Image src={phone} alt="" className="phoneImg" /> */}
         </div>
       </div>
+      </>
+      :
+      <>
+        <div className="destination_banner">
+          <h1 className="title">Destination Not Found</h1>
+        </div>
+      </>
+      }
     </>
   );
 };

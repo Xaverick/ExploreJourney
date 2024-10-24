@@ -22,17 +22,16 @@ const Footer = () => {
           <ul>
             <li><Link href="/about">About Us</Link></li>
             <li><Link href="/contact">Contact Us</Link></li>
-            <li><Link href="/blog">Destinations</Link></li>
+            <li><Link href="/packages">Destinations</Link></li>
           </ul>
         </section>
 
         <section className="footer__section">
           <h1 className='heading'>Destinations</h1>
           <ul>
-            <li><Link href="">Agara</Link></li>
-            <li><Link href="">Cairo</Link></li>
-            <li><Link href="">Alexandria</Link></li>
-
+            <li><Link href="/packages/Golden Triangle Tour">Golden Triangle Tour</Link></li>
+            <li><Link href="/packages/Rajasthan Tour">Rajasthan Tour</Link></li>
+            <li><Link href="/packages/Kerala Tour">Kerala Tour</Link></li>
           </ul>
         </section>
         <section className="footer__section ">

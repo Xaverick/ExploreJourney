@@ -44,13 +44,12 @@ const Navbar = () => {
           <li>
               <Link href="/packages" className='relative-position nohover'>Destinations <BiChevronDown /></Link>
               <ul className='hover-dropdown'>
-                <li><Link href="/services/coffewithmk">Koffee With MK</Link></li>
-                <li><Link href="/services/launchpad">Launchpad</Link></li>
-                <li><Link href="/services/emerge">Emerge</Link></li>
-                <li><Link href="/services/transcend">Transcend</Link></li>
-                <li><Link href="/services/ownthatstage">Own That Stage</Link></li>
-                <li><Link href="/services/legacy">Legacy</Link></li>
-               
+                <li><Link href="/packages/GoldenTriangleTour?tour=Golden Triangle Tour">Golden Triangle Tour</Link></li>
+                <li><Link href="/packages/Rajasthan Tour?tour=Rajasthan Tour">Rajasthan Tour</Link></li>
+                <li><Link href="/packages/Kerala Tour?tour=Kerala Tour">Kerala Tour</Link></li>
+                <li><Link href="/packages/Himachal Tour?tour=Himachal Tour">Himachal Tour</Link></li>
+                <li><Link href="/packages/Central India Tour?tour=Central India Tour">Central India Tour</Link></li>
+                <li><Link href="/packages/Beautiful Nepal Tour?tour=Beautiful Nepal Tour">Beautiful Nepal Tour</Link></li>
               </ul>
           </li>
           <li><Link href="" className='relative-position nohover'>Services <BiChevronDown /></Link>
@@ -100,14 +99,14 @@ const Navbar = () => {
                         collapsed: { opacity: 0, height: 0 ,padding:0},
                         
                         }}
-                      >
+                      > 
+                          <li><Link href="/packages/GoldenTriangleTour?tour=Golden Triangle Tour" onClick={() => setToggle(false)}>Golden Triangle Tour</Link></li>
+                          <li><Link href="/packages/RajasthanTour?tour=Rajasthan Tour" onClick={() => setToggle(false)}>Rajasthan Tour</Link></li>
+                          <li><Link href="/packages/Kerala Tour?tour=Kerala Tour" onClick={() => setToggle(false)}>Kerala Tour</Link></li>
+                          <li><Link href="/packages/Himachal Tour?tour=Himachal Tour" onClick={() => setToggle(false)}>Himachal Tour</Link></li>
+                          <li><Link href="/packages/Central India Tour?tour=Central India Tour" onClick={() => setToggle(false)}>Central India Tour</Link></li>
+                          <li><Link href="/packages/Beautiful Nepal Tour?tour=Beautiful Nepal Tour" onClick={() => setToggle(false)}>Beautiful Nepal Tour</Link></li>
 
-                          <li><Link href="/services/coffewithmk" onClick={() => setToggle(false)}>Koffee With Mk</Link></li>
-                          <li><Link href="/services/launchpad" onClick={() => setToggle(false)}>Launchpad</Link></li>
-                          <li><Link href="/services/emerge" onClick={() => setToggle(false)}>Emerge</Link></li>
-                          <li><Link href="/services/transcend" onClick={() => setToggle(false)}>Transcend</Link></li>
-                          <li><Link href="/services/ownthatstage" onClick={() => setToggle(false)}>Own That Stage</Link></li>
-                          <li><Link href="/services/legacy" onClick={() => setToggle(false)}>Legacy</Link></li>
                       </motion.div>
                         
                     )}
@@ -115,8 +114,10 @@ const Navbar = () => {
                   </span>         
 
                 </li>
-                <li><Link href='/home' onClick={() => setToggle(false)}> Contact Us </Link></li>
-
+                <li><Link href='/contact' onClick={() => setToggle(false)}> Contact Us </Link></li>
+                <li><Link href='/transport' onClick={() => setToggle(false)}> Transports </Link></li>
+                <li><Link href='/hotels' onClick={() => setToggle(false)}> Hotels </Link></li>
+            
             </ul>
             </motion.div>
           )}

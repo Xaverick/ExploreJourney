@@ -178,17 +178,16 @@
                             display: flex;
                             flex-direction: column;                        
                             gap: 0.5rem;
+
                             h2{
-                             
                                 font-family: var(--font-display);
                                 &:hover{
                                     color: var(--text-hover);
                                 }
                                 font-size: 1rem;
-    
-                                
-    
+                                font-weight: 700;
                             }
+
                             p{
                                 color: var(--text-hover);
                                 font-size: 1rem;
@@ -203,12 +202,8 @@
                         }
     
                     }
-    
                 }
-
-            }   
-            
-            
+            }               
         }
         
         .phoneImg{
