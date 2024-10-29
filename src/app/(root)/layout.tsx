@@ -1,6 +1,6 @@
 import Navbar from "@/Components/Navbar/Navbar"
 import Footer from "@/Components/Footer/Footer"
-
+import WhatsAppButton from "@/Components/WhatsApp"
 
 
 export default function AppLayout({
@@ -14,6 +14,7 @@ export default function AppLayout({
         <section className="">
             {children}  
         </section>
+        <WhatsAppButton />
         <Footer />
       </main>
     )

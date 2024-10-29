@@ -152,7 +152,7 @@ const page = ({ params }: { params: { destination: string } }) => {
                   <div className="blog__card" key={index}>
                     {item.img && <Image src={item.img} alt="" />}
                     <div className="blog__card__content">
-                      <h2 className="hover:text-[#DF6951]"><Link href={`/packages/${item.title}`}>{item.title}</Link></h2>
+                      <h2 className="hover:text-[#DF6951] "><Link href={`/packages/${item.title}?tour=${item.title}`}>{item.title}</Link></h2>
                       <p>{item.description}</p>
                     </div>
                   </div>

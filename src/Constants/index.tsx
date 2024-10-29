@@ -5,6 +5,13 @@ import img4 from '@/assets/Packages/img4.png';
 import img5 from '@/assets/Packages/img5.png';
 import img6 from '@/assets/Packages/img6.png';
 
+import rajasthanimg1 from '@/assets/Packages/rajasthan/1.jpg';
+import rajasthanimg2 from '@/assets/Packages/rajasthan/2.jpg';
+import rajasthanimg3 from '@/assets/Packages/rajasthan/3.jpg';
+import rajasthanimg4 from '@/assets/Packages/rajasthan/4.jpg';
+import rajasthanimg5 from '@/assets/Packages/rajasthan/5.jpg';
+import rajasthanimg6 from '@/assets/Packages/rajasthan/6.jpg';
+
 
 const packages = [
     {
@@ -15,7 +22,7 @@ const packages = [
     },
     {
         title: "Rajasthan Tour",
-        img: img2,
+        img: rajasthanimg5,
         description: "The Rajasthan Tour explores majestic forts, palaces, and desert landscapes, highlighting cities like Jaipur, Udaipur, Jodhpur, and Jaisalmer. ",
         days: '13 Nights & 15 Days',
     },
@@ -76,7 +83,7 @@ const popularPackages = [
 
 const detailedIteneray = [
     {
-        title: "Kashmir",
+        title: "Kashmir Tour",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatem.",
     
         details: [
@@ -405,12 +412,13 @@ const detailedIteneray = [
 
         
         gallery: [
-            img1,
-            img2,
-            img3,
-            img4,
-            img5,
-            img6
+            rajasthanimg1,
+            rajasthanimg2,
+            rajasthanimg3,
+            rajasthanimg4,
+            rajasthanimg5,
+            rajasthanimg6
+
         ],
     
         tourPlan: {

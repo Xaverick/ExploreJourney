@@ -16,14 +16,16 @@ const Card = ({title, description, image, days}: CardProps) => {
   return (
     <div className="trendycard">
         <div className="trendyicon">
-            <Image src={image} alt="vector" width={20} height={20}/>
+            <Image src={image} alt="vector" />
         </div>
         <div className='trendyinfo'> <FaCalendarAlt /> &nbsp; {days} </div>
         <div className="trendytext">
             <h3 className="trendytitle">{title}</h3>
             {/* <p className='flex'> <FaCalendarAlt /> &nbsp; {days} Days</p> */}
             <p className="trendydesc">{description}</p>
-            <button className='trendybtncards'>Explore Now</button>
+            <Link href={`/packages/${title}?tour=${title}`} className='trendybtncards'>
+              Exlore Now
+            </Link>
         </div>
     </div>
   )

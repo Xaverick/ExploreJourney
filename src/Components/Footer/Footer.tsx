@@ -42,7 +42,7 @@ const Footer = () => {
             <Link href={""}><FaXTwitter /></Link>
           </div>
           <div className='mt-2'>
-            <p><b>Eamil:</b> explorejourney13@gmail.com</p>
+            <p><b>Eamil:</b><a href="mailto:explorejourney13@gmail.com" className='hover:text-[#DF6951]'> explorejourney13@gmail.com</a></p>
             <p><b>Contact:</b> +91 8368912200</p>
           </div>
         </section>

@@ -137,7 +137,7 @@ export default function Home() {
           </h1>
           <p className='desc'>Discover the world's most romantic destinations, hand-picked for newlyweds. Experience luxury stays, intimate experiences, and breathtaking views. Let us transform your honeymoon dreams into cherished memories with our exclusive couples' packages."
           Would you like me to adjust the length or focus of this content? I can also suggest specific destination highlights or package features if you'd like to showcase those instead.</p>
-          <Link href='/packages/kashmir' className='btn'>
+          <Link href='/packages/Rajasthan Tour?tour=Kashmir Tour' className='btn'>
             View Pacakages
           </Link>
         </div>
@@ -156,9 +156,9 @@ export default function Home() {
         <h1 className="sub_heading">TRENDY</h1>
         <h1 className="heading">Our Trending Tour <br /> Packages</h1>
         <div className='trendycards'>
-          <Card title={packages[0].title} description={packages[0].description} days={packages[0].days} image={trendy1} />
-          <Card title={packages[1].title} description={packages[1].description} days={packages[1].days} image={trendy2} />
-          <Card title={packages[2].title} description={packages[2].description} days={packages[2].days} image={trendy3} />
+          <Card title={packages[0].title} description={packages[0].description} days={packages[0].days} image={packages[0].img} />
+          <Card title={packages[1].title} description={packages[1].description} days={packages[1].days} image={packages[1].img} />
+          <Card title={packages[2].title} description={packages[2].description} days={packages[2].days} image={packages[2].img} />
         </div>
       </div>
 

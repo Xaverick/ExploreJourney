@@ -20,9 +20,10 @@ const Hotels = () => {
         <div className="hotel_content">
             <h1 className="heading">Hotels</h1>
             <p className="para">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis aliquam excepturi doloremque maiores, consequatur unde, adipisci fugiat officiis explicabo voluptate suscipit id aut ipsam laborum sunt corrupti. Excepturi, distinctio quam!
-                Quae doloribus quaerat provident a odio, veniam ratione fuga fugiat, ullam eveniet dolore expedita dignissimos culpa ut, laudantium recusandae suscipit. Eum, consequuntur? Incidunt consectetur possimus fuga debitis nesciunt voluptas aliquid.
-                Accusantium maiores pariatur ad odio! Illo dolorum ipsum ut voluptate esse, fugit eligendi distinctio, corporis fugiat, minima quaerat expedita adipisci? Pariatur doloribus nisi ipsum architecto rem quidem! Veniam, nemo eum.
+            At Explore Journey, we understand the importance of comfortable accommodations when traveling. That's why we've partnered with some of the top hotel chains to provide our customers with the best lodging options at their destinations. 
+Our hotel booking service offers a wide selection of properties, from luxurious five-star resorts to budget-friendly inns. Whether you're looking for a beachfront getaway, a city center location, or a quiet countryside retreat, we have you covered.
+When you book through Explore Journey, you can expect exceptional service and competitive rates. Our team has carefully vetted each of our hotel partners to ensure they meet our high standards for quality, amenities, and customer satisfaction. <br /> <br />
+Explore our featured hotel chains below and let us help you find the perfect place to stay for your next journey:
             </p>
 
             <div className="hotel_cards">

@@ -22,7 +22,7 @@ const Card = ({ title, description, image, days }: CardProps) => {
         <div className="tag"><FaCalendarAlt /> &nbsp; {days} </div>
       </div>
       <div className="packageinfo">
-        <h1 className="hover:hover:text-[#DF6951]"><Link href={`/packages/${title}`}>{title}</Link></h1>
+        <h1 className="hover:hover:text-[#DF6951]"><Link href={`/packages/${title}?tour=${title}`}>{title}</Link></h1>
         <p>{description}</p>
         {/* <Link href="" className='packagebtn'>View Details</Link> */}
       </div>
@@ -66,7 +66,7 @@ const page = () => {
                   <div className='blog__card' key={index}>
                       {item.img && (<Image src={item.img} alt="" />)}
                       <div className='blog__card__content'>
-                          <h2 className="hover:text-[#DF6951] "><Link href={`/packages/${item.title}`}>{item.title}</Link></h2>
+                          <h2 className="hover:text-[#DF6951] "><Link href={`/packages/${item.title}?tour=${item.title}`}>{item.title}</Link></h2>
                           <p>{item.description}</p>
                       </div>
                   </div>
