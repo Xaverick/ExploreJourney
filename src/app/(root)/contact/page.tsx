@@ -118,15 +118,15 @@ export default function ContactPage() {
                 <div className="space-y-4">
                     <div className="flex items-center">
                     <Phone className="w-6 h-6 text-[#DF6951] mr-3" />
-                    <span>+1 (555) 123-4567</span>
+                    <span>+91 8368912200</span>
                     </div>
                     <div className="flex items-center">
                     <Mail className="w-6 h-6 text-[#DF6951] mr-3" />
-                    <span>info@yourtravelcompany.com</span>
+                    <span>explorejourney13@gmail.com</span>
                     </div>
                     <div className="flex items-center">
                     <MessageCircle className="w-6 h-6 text-[#DF6951] mr-3" />
-                    <span>WhatsApp: +1 (555) 987-6543</span>
+                    <span>WhatsApp: +91 8368912200</span>
                     </div>
                 </div>
                 </div>

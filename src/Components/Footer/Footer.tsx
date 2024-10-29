@@ -42,8 +42,8 @@ const Footer = () => {
             <Link href={""}><FaXTwitter /></Link>
           </div>
           <div className='mt-2'>
-            <p><b>Eamil:</b> 0w7zq@example.com</p>
-            <p><b>Contact:</b> +20123456789</p>
+            <p><b>Eamil:</b> explorejourney13@gmail.com</p>
+            <p><b>Contact:</b> +91 8368912200</p>
           </div>
         </section>
       </div>

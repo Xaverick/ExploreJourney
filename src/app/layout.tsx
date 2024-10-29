@@ -17,7 +17,7 @@ const spaceGrotesk = Space_Grotesk({
 
 export const metadata: Metadata = {
   icons: {
-    icon: "/assets/favicon.ico",
+    icon: "/assets/favicon.png",
   },
   title: "Explore Journey",
   description: "At Explore Journey, we are passionate about crafting unforgettable travel experiences. As a premier traveling and tour company, we specialize in showcasing the rich heritage, diverse cultures, and breathtaking landscapes of India. Our mission is to provide travelers with authentic, immersive journeys that create lasting memories.",
