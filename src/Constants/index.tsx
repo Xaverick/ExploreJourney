@@ -13,10 +13,15 @@ import rajasthanimg5 from '@/assets/Packages/rajasthan/5.jpg';
 import rajasthanimg6 from '@/assets/Packages/rajasthan/6.jpg';
 
 
+import goldentriangle1 from '@/assets/Packages/goldentriangle/1.jpg';
+import goldentriangle2 from '@/assets/Packages/goldentriangle/2.jpg';
+import goldentriangle3 from '@/assets/Packages/goldentriangle/3.jpg';
+import goldentriangle4 from '@/assets/Packages/goldentriangle/4.jpg';
+
 const packages = [
     {
         title: "Golden Triangle Tour",
-        img: img1,
+        img: goldentriangle3,
         description: "The Golden Triangle Tour in India covers Delhi, Agra, and Jaipur, showcasing iconic landmarks like the Taj Mahal, Jaipur’s palaces, and Delhi’s historic sites",
         days: '4 Nights and 5 Days',
     },
@@ -247,12 +252,10 @@ const detailedIteneray = [
         ],
     
         gallery: [
-            img1,
-            img2,
-            img3,
-            img4,
-            img5,
-            img6
+            goldentriangle1,
+            goldentriangle2,
+            goldentriangle3,
+            goldentriangle4
         ],
     
         tourPlan: {
