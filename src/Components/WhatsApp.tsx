@@ -1,7 +1,7 @@
 "use client";
 const WhatsAppButton = () => {
 
-  const handleWhatsAppClick = () => {
+  const handleWhatsAppClick  = () => {
     window.open('https://wa.me/918368912200?text=Hello');
   };
 

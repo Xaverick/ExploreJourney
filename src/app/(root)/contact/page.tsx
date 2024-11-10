@@ -25,7 +25,6 @@ export default function ContactPage() {
     query: '',
   });
 
-  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
 
   const { name, email, phone, subject, query } = formData;
@@ -75,7 +74,6 @@ export default function ContactPage() {
       .send('service_bv6ob4b', 'template_pq0l5f8', templateParams, 'uGK_mbrR6uqwyhQ6D')
       .then(
         (response) => {
-          setIsFormSubmitted(true);
           setLoading(false);
           setFormData({ name: '', email: '', phone: '', query: '', subject: '' });
           console.log('SUCCESS!', response.status, response.text);
