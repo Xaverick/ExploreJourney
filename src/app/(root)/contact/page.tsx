@@ -6,27 +6,86 @@ import { Input } from "@/Components/ui/input"
 import { Label } from "@/Components/ui/label"
 import { Textarea } from "@/Components/ui/textarea"
 import { Phone, Mail, MessageCircle } from "lucide-react"
+import emailjs from '@emailjs/browser';
 import './contact.scss'
+
+interface FormData {
+  name: string;
+  phone: string;
+  email: string;
+  subject: string;
+  query: string;
+}
 export default function ContactPage() {
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<FormData>({
     name: '',
     phone: '',
+    email: '',
     subject: '',
-    query: ''
-  })
+    query: '',
+  });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target
-    setFormData(prevState => ({ ...prevState, [name]: value }))
-  }
+  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
 
-  const handleSubmit = (e : React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
-    // Handle form submission here (e.g., send data to server)
-    console.log('Form submitted:', formData)
-    // Reset form after submission
-    setFormData({ name: '', phone: '', subject: '', query: '' })
-  }
+  const { name, email, phone, subject, query } = formData;
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
+    setFormData((prevState) => ({ ...prevState, [name]: value }));
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+
+    if (!name || !phone || !email || !query || !subject) {
+      alert('Please fill all the fields');
+      return;
+    }
+
+    if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
+      alert('Please enter a valid email');
+      return;
+    }
+
+    if (query.length < 20) {
+      alert('Message should be at least 20 characters long');
+      return;
+    }
+
+    if (!/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/.test(phone)) {
+      alert('Please enter a valid phone number');
+      return;
+    }
+
+    setLoading(true);
+
+    const templateParams = {
+      to_name: 'Harsh Aggarwal',
+      email: formData.email,
+      name: formData.name,
+      message: formData.query,
+      number: formData.phone,
+      subject: formData.subject,
+    };
+
+    emailjs
+      .send('service_bv6ob4b', 'template_pq0l5f8', templateParams, 'uGK_mbrR6uqwyhQ6D')
+      .then(
+        (response) => {
+          setIsFormSubmitted(true);
+          setLoading(false);
+          setFormData({ name: '', email: '', phone: '', query: '', subject: '' });
+          console.log('SUCCESS!', response.status, response.text);
+        },
+        (error) => {
+          console.log('FAILED...', error);
+          setLoading(false);
+        }
+      );
+  };
 
   return (
     <>
@@ -85,6 +144,18 @@ export default function ContactPage() {
                     />
                 </div>
                 <div>
+                    <Label htmlFor="email">Email</Label>
+                    <Input
+                    id="email"
+                    name="email"
+                    value={formData.email}
+                    type="email"
+                    onChange={handleChange}
+                    required
+                    className="border-gray-300 focus:border-[#DF6951] focus:ring-[#DF6951]"
+                    />
+                </div>
+                <div>
                     <Label htmlFor="subject">Subject</Label>
                     <Input
                     id="subject"
@@ -107,7 +178,7 @@ export default function ContactPage() {
                     />
                 </div>
                 <Button type="submit" className="w-full bg-[#DF6951] hover:bg-[#C85940] text-white">
-                    Send Message
+                    {loading ? 'Sending...' : 'Send Message'}
                 </Button>
                 </form>
             </div>

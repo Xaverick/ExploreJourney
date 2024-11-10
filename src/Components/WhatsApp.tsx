@@ -1,22 +1,5 @@
 "use client";
-
-import { useEffect, useState } from 'react';
-
 const WhatsAppButton = () => {
-//   const [isVisible, setIsVisible] = useState(true);
-
-//   useEffect(() => {
-//     const handleScroll = () => {
-//       if (window.pageYOffset > 100) {
-//         setIsVisible(false);
-//       } else {
-//         setIsVisible(true);
-//       }
-//     };
-
-//     window.addEventListener('scroll', handleScroll);
-//     return () => window.removeEventListener('scroll', handleScroll);
-//   }, []);
 
   const handleWhatsAppClick = () => {
     window.open('https://wa.me/918368912200?text=Hello');
@@ -24,9 +7,7 @@ const WhatsAppButton = () => {
 
   return (
     <div
-      className={`fixed bottom-4 right-4 z-50 ${
-        'opacity-100' 
-      } transition-opacity duration-300`}
+      className="fixed bottom-4 right-4 z-50 transition-opacity duration-300"
     >
       <button
         className="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-4 rounded-full shadow-lg"

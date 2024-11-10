@@ -48,6 +48,7 @@
         width: 100%;
         margin-top: 2rem;
         gap: 1rem;
+
         .left{
             display: flex;
             flex-direction: column;
@@ -76,6 +77,16 @@
                 width: 100%;
                 height: auto;
                 object-fit: cover;
+            }
+        }
+
+        @media screen and (max-width: 700px){
+            flex-direction: column;
+            .left{
+                width: 100%;
+            }
+            .right{
+                width: 100%;
             }
         }
     }

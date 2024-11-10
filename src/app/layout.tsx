@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Space_Grotesk } from "next/font/google";
 import "./globals.scss";
-
+import WhatsAppButton from "@/Components/WhatsApp"
 const inter = Inter({ 
   subsets: ['latin'],
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
@@ -30,7 +30,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} ${spaceGrotesk.className}`}>{children}</body>
+      <body className={`${inter.className} ${spaceGrotesk.className}`}>{children}
+      <WhatsAppButton />
+      </body>
     </html>
   );
 }
