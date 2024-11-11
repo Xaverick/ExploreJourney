@@ -29,9 +29,9 @@ const Footer = () => {
         <section className="footer__section">
           <h1 className='heading'>Destinations</h1>
           <ul>
-            <li><Link href="/packages/Golden Triangle Tour">Golden Triangle Tour</Link></li>
-            <li><Link href="/packages/Rajasthan Tour">Rajasthan Tour</Link></li>
-            <li><Link href="/packages/Kerala Tour">Kerala Tour</Link></li>
+            <li><Link href="/packages/Golden Triangle Tour?tour=Golden Triangle Tour">Golden Triangle Tour</Link></li>
+            <li><Link href="/packages/Rajasthan Tour?tour=Rajasthan Tour">Rajasthan Tour</Link></li>
+            <li><Link href="/packages/Kerala Tour?tour=Kerala Tour">Kerala Tour</Link></li>
           </ul>
         </section>
         <section className="footer__section ">

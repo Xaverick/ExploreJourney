@@ -574,7 +574,342 @@ const detailedIteneray = [
                 "Any increase in costs beyond our control such as fuel and air fares increase, additional Governments levies and taxes etc."
             ]
         }
+    },
+
+    {
+        title: "Kerala Tour",
+        description: "This Kerala tour takes you from the historic port city of Cochin, rich with a multicultural heritage, to the scenic hill station of Munnar, and finally to the tranquil backwaters of Alleppey. The journey showcases a range of Kerala's landscapes, from coastal views to lush tea plantations and serene waterways, with cultural experiences including traditional dance performances and houseboat cruises.",
+        
+        details: [
+            {
+                key: "Destination",
+                value: "Kerala"
+            },
+            {
+                key: "Departure",
+                value: "Cochin Airport"
+            },
+            {
+                key: "Departure Time",
+                value: "Arrival at Cochin Airport, varies per flight schedule"
+            },
+            {
+                key: "Return Time",
+                value: "Departure from Cochin Airport, varies per flight schedule"
+            }
+        ],
+    
+        included: [
+            "Accommodation (Double/Twin sharing) for 4 nights",
+            "Breakfast at all hotels",
+ 
+            "Sightseeing as per itinerary",
+            "Road tax, parking, driver allowance, and state entry tax"
+        ],
+    
+        notIncluded: [
+            "5% GST on total cost",
+            "Any services other than those mentioned",
+            "Lunches or dinners except on Houseboat",
+            "Local or accompanying guide services",
+
+        ],
+        
+        gallery: [
+            img1, img2, img3, img4, img5, img6
+        ],
+    
+        tourPlan: {
+            itinerary: [
+                {
+                    heading: "Day 1 - Arrive Cochin",
+                    content: <>
+                        <p>Arrive at Cochin airport, meet and assist at the airport, followed by transfer to hotel.</p>
+                        
+                        <p><b>COCHIN</b>: Known as the "Queen of the Arabian Sea", Cochin is believed to be one of the finest natural harbors in the world, where ferry rides offer breathtaking views. As you cruise around man-made islands with lush lawns sloping to the water's edge, you can see layers of history reflected in its architecture and culture, from Chinese, Arab, Jewish, British, French, to Portuguese influences.</p>
+                        
+                        <p>Upon arrival, check-in to the hotel.</p>
+                        
+                        <p>Later, proceed for a sightseeing tour of Cochin: - Dutch Palace (closed on Fridays), The Jewish Synagogue (remains closed on Fridays & Saturdays), St. Francis Church, and the Santa Cruz Basilica. Also view the unique, still-in-use <b>Chinese Fishing Nets</b>.</p>
+                        
+                        <p><b>Evening</b>: Witness an iconic Kathakali Dance Performance, a ritualized dance form native to Kerala, characterized by elaborate costumes and makeup, where male dancers portray both male and female roles.</p>
+                        
+                        <p>Overnight stay at hotel.</p>
+                    </>,
+                    move: false,
+                    open: false
+                },
+                {
+                    heading: "Day 2 - Cochin to Munnar (125 kms / 4 hrs)",
+                    content: <>
+                        <p>Morning breakfast at the hotel and proceed to leave for Munnar.</p>
+                        
+                        <p><b>Munnar</b>: A popular hill station known as the "Kashmir of South India", located in the Idukki district of Kerala at approximately 1,600 meters (5,200 ft) above sea level in the Western Ghats mountain range.</p>
+                        
+                        <p>Upon arrival, check-in to the hotel.</p>
+                        
+                        <p>Rest of the day is free to relax and enjoy the natural surroundings.</p>
+                        
+                        <p>Overnight stay at hotel.</p>
+                    </>,
+                    move: false,
+                    open: false
+                },
+                {
+                    heading: "Day 3 - Munnar",
+                    content: <>
+                        <p>After breakfast, proceed for a sightseeing tour of Munnar.</p>
+                        
+                        <p><b>Visit</b>: Tea Museum, Tea Estates, Echo Point, Attukad Waterfalls, Pothamedu View Point, and other scenic spots.</p>
+                        
+                        <p>Return back to the hotel.</p>
+                        
+                        <p>Evening free for relaxation or independent activities.</p>
+                        
+                        <p>Overnight stay at hotel.</p>
+                    </>,
+                    move: false,
+                    open: false
+                },
+                {
+                    heading: "Day 4 - Munnar to Alleppey (172 kms / 5 hrs)",
+                    content: <>
+                        <p>After breakfast at the hotel, proceed to leave for Alleppey.</p>
+                        
+                        <p><b>Alleppey (Alappuzha)</b>: Located on the Laccadive Sea, Alleppey is renowned for its rustic backwaters and houseboat cruises. Known as the "Venice of the East," it features tranquil canals and lagoons, as well as the famous Alappuzha Beach and 19th-century Alappuzha Lighthouse.</p>
+                        
+                        <p>Upon arrival, embark on a houseboat to enjoy an exotic ride along the picturesque backwaters, with views of local villages and coconut trees along the shores.</p>
+                        
+                        <p>Relish delicious meals onboard.</p>
+                        
+                        <p>Overnight stay and dinner on the houseboat.</p>
+                    </>,
+                    move: false,
+                    open: false
+                },
+                {
+                    heading: "Day 5 - Alleppey to Cochin (53 kms / 1 ½ hrs)",
+                    content: <>
+                        <p>After breakfast, disembark at Alleppey and drive to Cochin.</p>
+                        
+                        <p>On arrival in Cochin, transfer to the airport to connect for onward destination.</p>
+                    </>,
+                    move: false,
+                    open: false
+                }
+            ],
+            
+            inclusion: [
+                "Accommodation based on double/twin sharing for 4 nights.",
+                "Breakfast at all hotels.",
+                "All meals (Breakfast, Lunch, Dinner) on Houseboat stay at Alleppey",
+                "Air-conditioned transport (non-AC in hill areas)",
+                "All meals on houseboat in Alleppey.",
+                "Air-conditioned transport (non-AC in hill areas).",
+                "Sightseeing as per itinerary."
+            ],
+    
+            exclusion: [
+                "5% GST extra.",
+                "Meals not mentioned.",
+                "Guide services and monument entry fees.",
+                "Entrance fees to monuments",
+                "Domestic and international flights",
+                "Visa charges & airport taxes",
+                "Personal expenses like laundry, drinks, tips, and calls",
+                "Camera fees",
+                "Tips to drivers, guides, or escorts"
+            ]
+        }
+    },
+    {
+        title: "Beautiful Nepal Tour",
+        description: "This tour takes you through the stunning landscapes and rich cultural heritage of Nepal, from the bustling capital of Kathmandu to the serene hills of Nagarkot and the picturesque beauty of Pokhara.",
+        
+        details: [
+            {
+                key: "Destination",
+                value: "Nepal"
+            },
+            {
+                key: "Departure",
+                value: "Kathmandu Airport"
+            },
+            {
+                key: "Departure Time",
+                value: "Arrival at Kathmandu Airport, varies per flight schedule"
+            },
+            {
+                key: "Return Time",
+                value: "Departure from Kathmandu Airport, varies per flight schedule"
+            }
+        ],
+    
+        included: [
+            "Accommodation (Double/Twin sharing) for 6 nights",
+            "Breakfast at all hotels",
+            "Sightseeing as per itinerary",
+        ],
+    
+        notIncluded: [
+            "Any services other than those mentioned",
+            "Any lunches or dinners (other than mentioned above)",
+            "Local or accompanying guide services",
+            "Cable car ride / boat ride",
+        ],
+        
+        gallery: [
+            img1, img2, img3, img4, img5, img6
+        ],
+    
+        tourPlan: {
+            itinerary: [
+                {
+                    heading: "Day 1 - Arrive Kathmandu (by Flight)",
+                    content: <>
+                        <p>Arrive at Kathmandu airport, meet and assist at the airport followed by transfer to hotel.</p>
+                        <p><b>Kathmandu</b>: Nepal's capital, is set in a valley surrounded by the Himalayan mountains. At the heart of the old city’s mazelike alleys is Durbar Square, which becomes frenetic during Indra Jatra, a religious festival featuring masked dances. Many of the city's historic sites were damaged or destroyed by a 2015 earthquake. Durbar Square's palace, Hanuman Dhoka, and Kasthamandap, a wooden Hindu temple, are being rebuilt.</p>
+                        <p>Overnight stay at hotel.</p>
+                    </>,
+                    move: false,
+                    open: false
+                },
+                {
+                    heading: "Day 2 - Kathmandu",
+                    content: <>
+                        <p>Morning breakfast at hotel and proceed to leave for sightseeing tour of Kathmandu</p>
+                        <p>Visit Pashupatinath and Boudhanath Stupa, Kathmandu Darbar Square, Swayambhu Temple, Dakshinkali Temple, Kathmandu etc.</p>
+                        <p><b>Pashupatinath Temple</b> - One of the holiest Hindu shrines in Nepal, the Pashupatinath Temple is stretched across both the banks of the beautiful and sacred Bagmati River on the eastern fringes of the capital city of Kathmandu. The magnificent sanctum devoted to Lord Shiva draws in thousands of devotees who come to offer their prayers and seek blessings from him. Sprawled over a large area with temples and ashrams, it is believed that the Jyotirlinga housed in the Pashupatinath temple is the head of the body which is made up of the twelve Jyotirlinga in India. In 1979, the magnificent temple was declared a UNESCO World Heritage Site.</p>
+                        <p><b>Boudhanath Stupa</b> - Situated at about 11 kilometers from the city centre of Kathmandu, Boudhanath Stupa dominates the Kathmandu skyline with its gargantuan spherical shape. Thousands of pilgrims from different religions gather here daily. They perform a ritualistic circumnavigation, known as the 'kora', of the colossal dome. It is believed that anyone who circumambulates the stupa with no ill thoughts in their hearts receives good karma. Moreover, the gates of hell are permanently closed for them!</p>
+                        <p><b>Kathmandu Darbar Square</b> - The place which has witnessed and received one king after the other as they sat and ruled over Nepal a long time ago, where new rulers were crowned while the steady beats of drums and trumpets filled the place. The regal Kathmandu Durbar Square is one of the three durbar squares in the country. Till date, the place remains the most remarkable legacy of Kathmandu's traditional architecture. Even though the unfortunate earthquake of 2015 took its toll on the building and around half a dozen places within the premises collapsed, it has still retained its original glory. Three squares - A former elephant stable Basantapur square, main Durbar square on the west and another part of Durbar Square that houses the entrance to Hanuman Dhoka which are loosely connected make up the Durbar Square area.</p>
+                        <p><b>Swayambhu Temple</b> - Perched on top of the Semgu Hill located in the outskirts to the west of the Kathmandu Valley, Swayambhu Temple temple is one of the most important religious shrines in the city of Kathmandu. With a white dome stupa and an array of shrines, this place draws people to it daily. Circumnavigating the temple in a clockwise direction is a common practice among the pilgrims since it is believed to wash away all the sins. The sanctum is one of the holiest sites among the Buddhists and Tibetans and is second only to the Lord Boudha for them.</p>
+                        <p>Evening return to Kathmandu.</p>
+                        <p>Later transfer to Airport to connect your onward flight connections.</p>
+                    </>,
+                    move: false,
+                    open: false
+                },
+                {
+                    heading: "Day 3 - Kathmandu – Nagarkot (28 kms / 1 hrs) - Kathmandu",
+                    content: <>
+                        <p>Morning breakfast and proceed to leave for drive to Nagarkot en-route visit Bhaktapur.</p>
+            
+                        <p><b>Bhaktapur</b>, known locally as Khwopa, is a city in the east corner of the Kathmandu Valley in Nepal located about 13 kilometres from the capital city, Kathmandu. It is in and serves as the headquarters of Bhaktapur District in Bagmati Province of Nepal. In terms of area, Bhaktapur is the smallest city of Nepal.</p>
+            
+                        <p>Visit <b>Changu Narayan Temple of Bhaktapur</b> - The ancient Hindu temple of Changu Narayan is located on a high hilltop that is also known as Changu or Dolagiri. The temple was surrounded by champak tree forest and a small village known as Changu. The temple is in Changunarayan Municipality of Bhaktapur District, Nepal.</p>
+            
+                        <p>Continue drive to Nagarkot…</p>
+            
+                        <p><b>Nagarkot</b> is a village in central Nepal, at the rim of the Kathmandu Valley. It’s known for its views of the Himalayas, including Mount Everest to the northeast, which are especially striking at sunrise and sunset. The surrounding scrubland is laced with trails and home to many butterflies. To the west is the ancient, pagoda-style Changunarayan Temple, dedicated to Vishnu and a Hindu pilgrimage site.</p>
+            
+                        <p>Upon arrival check-in to the hotel.</p>
+            
+                        <p>Evening view sunset (subject to weather permit)</p>
+            
+                        <p>Return back to Kathmandu</p>
+            
+                        <p>Overnight stay at hotel.</p>
+                    </>,
+                    move: false,
+                    open: false
+                },
+                {
+                    heading: "Day 4 - Kathmandu – Bandipur - Pokhara (210 kms / 7 hrs)",
+                    content: <>
+                        <p>Morning breakfast at hotel and proceed to leave for Pokhara en-route visit Bandipur.</p>
+            
+                        <p><b>Bandipur</b> is a hilltop settlement and a rural municipality in Tanahun District of Nepal. Because of its preserved, old-time cultural atmosphere, Bandipur has increasingly been coming to the attention of tourism.</p>
+            
+                        <p>Continues drive to Pokhara…</p>
+            
+                        <p><b>Pokhara</b> is a city on Phewa Lake in central Nepal. It’s known as a gateway to the Annapurna Circuit, a popular trail in the Himalayas. Tal Barahi Temple, a 2-story pagoda, sits on an island in the lake. On the eastern shore, the Lakeside district has yoga centers and restaurants. In the city’s south, the International Mountain Museum has exhibits on the history of mountaineering and the people of the Himalayas.</p>
+            
+                        <p>Upon arrival, check-in to the hotel.</p>
+            
+                        <p>Overnight stay at hotel.</p>
+                    </>,
+                    move: false,
+                    open: false
+                },
+                {
+                    heading: "Day 5 - Pokhara",
+                    content: <>
+                        <p>Morning breakfast at hotel and proceed to sightseeing tour of Pokhara.</p>
+            
+                        <p><b>Covering</b> - Phewa Lake, Devi’s Fall, Shree Bindhyabasni Temple, Mahendra Cave etc…</p>
+            
+                        <p><b>Mahendra Cave</b> - While visiting the Mahendra Cave, bring a headlamp for the best experience. The impressive cave features unique sculptures, providing a memorable experience for adventure lovers.</p>
+            
+                        <p><b>Phewa Lake</b> - A perfect place to enjoy boating and escape city life. Paddle at your own speed, enjoying the peaceful waters and the warm sunshine.</p>
+            
+                        <p><b>Devi’s Fall</b> - Known locally as Patale Chhango, this striking waterfall descends into a 500-foot underground tunnel, surrounded by lush flora.</p>
+            
+                        <p><b>Bindhyabasni Temple</b> - Located on a hilltop, this serene temple offers panoramic views of Pokhara's landscape, making it ideal for photography and scenic viewing.</p>
+            
+                        <p>Rest day at leisure and relax.</p>
+            
+                        <p>Overnight at the hotel.</p>
+                    </>,
+                    move: false,
+                    open: false
+                },
+                {
+                    heading: "Day 6 - Pokhara - Kathmandu (200 kms / 7 hrs)",
+                    content: <>
+                        <p>Morning breakfast at hotel and proceed to leave for drive to Kathmandu.</p>
+            
+                        <p>Upon arrival, check-in to hotel.</p>
+            
+                        <p>Late afternoon visit to <b>Patan</b> - Patan is Nepal’s third-largest city, known for its rich art and cultural heritage. It is a center for traditional handicrafts and home to Patan Durbar Square, which features temples, statues, and palaces, as well as the Patan Museum, a must-visit attraction.</p>
+            
+                        <p>Rest day free for relaxation or shopping at local markets.</p>
+            
+                        <p>Overnight stay at hotel.</p>
+                    </>,
+                    move: false,
+                    open: false
+                },
+                {
+                    heading: "Day 7 - Kathmandu - Depart (By Flight)",
+                    content: <>
+                        <p>Morning breakfast at hotel.</p>
+            
+                        <p>Later transfer to Airport to connect your onward flight connections.</p>
+                    </>,
+                    move: false,
+                    open: false
+                }
+            ],
+            
+            inclusion: [
+                "Accommodation based on double/twin sharing room for 6 nights",
+                "Breakfast at all hotels",
+                "Sightseeing as per itinerary",
+                "Transfers and sightseeing by Air-conditioned private Van",
+                "500ML mineral water bottle per person / per day in car",
+                "All presently applicable taxes including service taxes"
+            ],
+    
+            exclusion: [
+                "Any services other than those mentioned",
+                "Any lunches or dinners (other than mentioned above)",
+                "Local or accompanying guide services",
+                "Cable car ride / boat ride",
+                "Monument entrances to sites as per programs",
+                "Domestic & international flights",
+                "Visa charges & Airport taxes",
+                "Extras like table drinks, telephone calls, tips, laundry, or other personal expenses",
+                "Still camera or video camera fees",
+                "Tips to driver/guide/escort",
+                "Travel or medical insurance",
+                "Airfare (quoted separately)",
+                "Tips at restaurants/to guides/drivers",
+                "Any increase in costs beyond our control such as fuel and air fares increase, additional Government levies and taxes"
+            ]
+        }
     }
+    
+    
             
 ]
 
